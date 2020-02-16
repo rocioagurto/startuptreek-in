@@ -1,0 +1,391 @@
+//SECTION 1
+.central {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+}
+
+
+.medio__texto p{
+    color: $onyx;
+    font-size: $small;
+}
+.medio__img {
+    margin-right: 1rem;
+}
+
+.central .container1 {
+    text-align: end;
+}
+
+.central .container2 {
+    margin-right: 5rem;
+}
+
+@media screen and (min-width: 318px) {
+    .central .container1 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .central .container2 {
+        grid-column: 1/-1;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .central h1 {
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+    .img__central {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .central .container1 {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .central .container2 {
+        grid-column: 1/-1;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+    .central h1 {
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .central .container1 {
+        grid-column: 1/2;
+        text-align: center;
+        margin-left: 4rem;
+    }
+
+    .central .container2 {
+        grid-column: 2/3;
+        margin-left: -4rem;
+        margin-right: 5rem;
+    }
+    .central h1 {
+        margin-left: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .central h1 {
+        margin-left: 25rem;
+        margin-bottom: 2rem;
+        margin-top: 8rem;
+    }
+    .img__central {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .central .container1 {
+        grid-column: 1/2;
+        text-align: end;
+        margin-left: 4rem;
+    }
+
+    .central .container2 {
+        grid-column: 2/3;
+        text-align: start;
+        margin-right: 12rem;
+        font-size: $large;
+        margin-left: -2rem;
+    }
+    .img__central {
+        margin-top: 2rem;
+        margin-right: 6rem;
+
+    }
+    .central h1 {
+        margin-left: 33rem;
+        margin-bottom: 2rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------
+// SECCION 2
+
+.final {
+    background-image: url(../img/bg-price.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+//container tarjetas
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 7rem;
+    justify-items: center;
+    grid-column: -3/-1;
+}
+.container .titulo {
+    color: $blanco;
+}
+//tarjeta izq
+.card {
+    background-color: $blanco;
+}
+
+.card h2 {
+    margin-left: 1rem;
+    font-family: $raleway;
+    margin-top: 3rem;
+    font-size: $xs-large;
+}
+
+.card h1 {
+    margin-left: 1rem;
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large;
+}
+
+.card__li {
+    font-size: $medium;
+    line-height: 2rem;
+
+}
+
+.card .btn {
+    width: 13rem;
+    height: 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color: $blanco;
+}
+
+
+//tarjeta derecha
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .container .titulo {
+        margin-bottom: -10rem;
+        margin-top: 5rem;
+        margin-left: 7rem;
+        font-size: $xs-large;
+    }
+
+    .card {
+       
+        margin-top: 8rem;
+        grid-column: -3/-1;
+        width: 18rem;
+        height: 22rem;
+        margin-bottom: 2rem;
+    }
+
+    #larga {
+        margin-top: .5rem;
+        height: 28rem;
+    }
+
+    .card h2 {
+        margin-left: 1rem;
+        font-family: $raleway;
+        margin-top: 2rem;
+        font-size: $large;
+    }
+
+    .card h1 {
+        margin-left: 1rem;
+        font-family: $raleway;
+        font-weight: $bold;
+        font-size: $x-large;
+    }
+
+    .card__li {
+        font-size: $small;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 577px) {
+
+    .container {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .container .titulo {
+        margin-bottom: -4rem;
+        margin-top: 8rem;
+        margin-right: -20rem;
+        font-size: $xs-large;
+    }
+
+
+    .card {
+        margin-top: 7rem;
+        grid-column: -3/-2;
+        width: 18rem;
+        height: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    #larga {
+        grid-column: -2/-1;
+        height: 28rem;
+    }
+
+    .card h2 {
+        margin-left: 1rem;
+        font-family: $raleway;
+        margin-top: 2rem;
+        font-size: $large;
+    }
+
+    .card h1 {
+        margin-left: 1rem;
+        font-family: $raleway;
+        font-weight: $bold;
+        font-size: $x-large;
+    }
+
+    .card__li {
+        font-size: $small;
+        line-height: 2rem;
+    }
+
+    #btn1 {
+        margin-top: 9rem;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) {
+    .container {
+        margin-top: 2rem
+    }
+    .container .titulo {
+        margin-bottom: -18rem;
+        margin-top: 9rem;
+        margin-right: -24rem;
+        font-size: $xs-large;
+    }
+
+
+    .container .card {
+        width: 18rem;
+        height: 28rem;
+        margin-top: 14rem;
+
+    }
+    .card__li {
+        font-size: $small;
+        line-height: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 920px) {
+    .container {
+        margin-top: 2rem
+    }
+
+    .container .card {
+        width: 18rem;
+        height: 28rem;
+        margin-left: 5rem;
+    }
+
+    #larga {
+        margin-left: -10rem;
+    }
+
+    .card__li {
+        font-size: $small;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin-top: 2rem;
+    }
+
+    .container .titulo {
+        margin-bottom: -18rem;
+        margin-top: 10rem;
+        margin-right: -38rem;
+        font-size: $xs-large;
+    }
+
+
+    .card {
+        margin-top: 10rem;
+        width: 20rem;
+        height: 28rem;
+        margin-left: 10rem;
+    }
+
+    .card .btn {
+        margin-left: 3rem;
+    }
+
+    #larga {
+        margin-left: -10rem;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    .container {
+        margin-top: 8rem;
+    }
+
+    .container .titulo {
+        margin-bottom: -18rem;
+        margin-top: 12rem;
+        margin-right: -44rem;
+        font-size: $xs-large;
+    }
+
+    .card {
+        margin-top: 14rem;
+        width: 20rem;
+        height: 28rem;
+        margin-left: 10rem;
+    }
+
+    .card .btn {
+        margin-left: 3rem;
+    }
+
+    #larga {
+        margin-left: -10rem;
+    }
+
+}

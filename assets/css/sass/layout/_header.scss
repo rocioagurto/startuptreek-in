@@ -1,0 +1,130 @@
+//HEADER
+
+.header {
+
+    width: 100vw;
+    background-color: #fff;
+}
+
+.header__imagen1 {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.header__texto {
+    width: 30%;
+    font-size: $medium;
+    margin-left: 5rem;
+    margin-top: -40rem;
+    margin-bottom: 35rem;
+}
+.header__texto h1 {
+    font-weight: $bold;
+    font-size: $xx-large;
+}
+
+
+.header__texto p {
+    color: $onyx;
+}
+
+@media screen and (min-width: 318px) {
+    .header__texto {
+        width: 80%;
+        font-size: $small;
+        margin-left: 2rem;
+        margin-top: -26rem;
+        margin-bottom: 13rem;
+    }
+    
+
+    .header__imagen1 {
+        margin-top: 18rem;
+}
+}
+
+@media screen and (min-width: 460px) {
+    .header__texto {
+        width: 60%;
+        font-size: $small;
+        margin-left: 4rem;
+        margin-top: -27rem;
+        margin-bottom: 13rem;
+    }
+    
+
+    .header__imagen1 {
+        margin-top: 14rem;
+}
+}
+
+@media screen and (min-width: 576px) {
+    .header__texto {
+        width: 60%;
+        font-size: $small;
+        margin-left: 4rem;
+        margin-top: -28rem;
+        margin-bottom: 16rem;
+    }
+    
+    .header__imagen1 {
+        margin-top: 9rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .header__texto {
+        width: 50%;
+        font-size: $small;
+        margin-left: 5rem;
+        margin-top: -28rem;
+        margin-bottom: 20rem;
+    }
+
+    .header__imagen1 {
+        margin-top: 5rem;
+}
+}
+
+@media screen and (min-width: 920px) {
+    .header__texto {
+        width: 40%;
+        font-size: $small;
+        margin-left: 7rem;
+        margin-top: -34rem;
+        margin-bottom: 18rem;
+    }
+
+    .header__imagen1 {
+        margin-top: 5rem;
+}
+}
+
+
+@media screen and (min-width: 1010px) {
+    .header__texto {
+        width: 40%;
+        font-size: $small;
+        margin-left: 7rem;
+        margin-top: -40rem;
+        margin-bottom: 18rem;
+    }
+
+    .header__imagen1 {
+        margin-top: 5rem;
+}
+}
+
+@media screen and (min-width: 1240px) {
+    .header__texto {
+        width: 30%;
+        font-size: $small;
+        margin-left: 7rem;
+        margin-top: -47rem;
+        margin-bottom: 25rem;
+    }
+
+    .header__imagen1 {
+        margin-top: 7rem;
+}
+}
